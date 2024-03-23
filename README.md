@@ -18,7 +18,7 @@ In this short project, the Transimpedance amplifier is centered around a CMOS in
 
 <br>
   <p align="center">
-    <img height = "250" src = "ASSETS/INVERTER_TIA_EQUIV_CIRCUIT.png">
+    <img height = "450" src = "ASSETS/INVERTER_TIA_EQUIV_CIRCUIT.png">
     <br>
     <br>
     <a><b>Inverter-based TIA and equivalent circuit for transfer function derivation</b></a>
@@ -44,7 +44,7 @@ The small PD15-22B photodiode has been soldered to a small piece of protoboard, 
 
 For the feedback resistor I used a 0.1% tolerance, 10 $K\Omega$ resistor, that I had from past projects.
 
-Given a maximum diode current of 25 $\mu A$, the generated voltage would be 250mV, low enough not to break the biasing of the amplifier and high enough to be observable on the scope's screen.
+Given a maximum diode current of 25 $\mu A$, the generated voltage would be 450mV, low enough not to break the biasing of the amplifier and high enough to be observable on the scope's screen.
 
 The BW of our TIA should be large enough, on the order of several hundred KHz. However, my analysis only assumes the effect of the input/diode capacitance, the real circuit will have many more parasitic capacitances. Our 1st order approximation is not perfect, as we may observe ringing and a degree of instability when building the real circuit. 
 
@@ -53,7 +53,7 @@ The final implementation of the circuit looks like this:
 
 <br>
   <p align="center">
-    <img height = "250" src = "ASSETS/FRONT.png">
+    <img height = "450" src = "ASSETS/FRONT.png">
     <br>
     <br>
     <a><b>TIA prototype from above</b></a>
@@ -62,7 +62,7 @@ The final implementation of the circuit looks like this:
 
 <br>
   <p align="center">
-    <img height = "250" src = "ASSETS/BACK.png">
+    <img height = "450" src = "ASSETS/BACK.png">
     <br>
     <br>
     <a><b>TIA prototype from below, with solder traces visible</b></a>
@@ -71,7 +71,7 @@ The final implementation of the circuit looks like this:
 
 <br>
   <p align="center">
-    <img height = "250" src = "ASSETS/SIDE.png">
+    <img height = "450" src = "ASSETS/SIDE.png">
     <br>
     <br>
     <a><b>Detail of the prototype board, IR emitter depicted</b></a>
@@ -82,7 +82,7 @@ In the figures shown below, we may observe the phase-inversion and slight ringin
 
 <br>
   <p align="center">
-    <img height = "250" src = "ASSETS/SIDE_BY_SIDE.png">
+    <img height = "450" src = "ASSETS/SIDE_BY_SIDE.png">
     <br>
     <br>
     <a><b>TIA performance for 10KHz and 100KHz, with deviations from the 1st order approximation present</b></a>
