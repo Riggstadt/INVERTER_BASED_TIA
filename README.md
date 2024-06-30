@@ -1,6 +1,6 @@
 # CMOS Inverter as simple Transimpedance Amplifier
 ## Purpose
-With this project, I aim to use a CD4007UBE CMOS inverter IC as the basis for a simple photodiode amplifier. CMOS inverters are usually used for digital applications and are as a result most often either driven into the linear or cutoff region, as staying too long in the saturation region will draw too much power.
+I aim to use a CD4007UBE CMOS inverter IC as the basis for a simple photodiode amplifier. CMOS inverters are usually used for digital applications and are as a result most often either driven into the linear or cutoff region, as staying too long in the saturation region will draw too much power.
 
 However, the inverter can also be used as a low-gain amplifier in its saturation region. This often undocumented property of the CMOS inverter is utilized to our benefit in this project.
 
@@ -12,7 +12,7 @@ After some small-signal approximations, we may, as depicted in <a href="https://
 
 The video linked above does not go into detail about the capacitive loading of the circuit, as the various parasitic capacitances present in a CMOS inverter are very low, on the order of picoFarads. However, for photodiode amplifiers the diode capacitance of the photodetector has a clear impact on performance. The simplest TIA is a bare resistor connected in series with a reverse biased photodiode. The resistive TIA has severe bandwidth issues, as its Bandwidth (BW) is restricted to $f_{-3dB}=\frac{1}{2\\;\pi\cdot R_{L}\\;C_{D}}$. 
 
-Active TIAs(either the slower op-amp based ones, or the faster GHz-level transistor ones), have the advantage of higher linearity and greater Bandwidth.
+Active TIAs (either the slower op-amp based ones, or the faster GHz-level transistor ones), have the advantage of higher linearity and greater Bandwidth.
 
 In this short project, the Transimpedance amplifier is centered around a CMOS inverter, as depicted in the figure presented below:
 
